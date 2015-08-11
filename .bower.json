@@ -1,0 +1,36 @@
+{
+  "name": "OpenBlog",
+  "description": "A decent and OpenSource blog tool",
+  "main": [
+    "public/vendor/angular#1.4.3",
+    "sass/motion.scss"
+  ],
+  "dependencies": {
+    "get-size": "~1.2.2",
+    "eventEmitter": "~4.2.11"
+  },
+  "devDependencies": {
+    "qunit": "~1.16.0"
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "motion",
+    "physics",
+    "particles"
+  ],
+  "authors": [
+    "John lennon de melo fernandes <jlfernandes91@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
