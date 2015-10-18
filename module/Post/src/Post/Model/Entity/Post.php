@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Model\Entity;
+namespace Post\Model\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Zend\Stdlib\Hydrator\ClassMethods;
@@ -161,7 +161,7 @@ class Post
         $this->slug = $slug;
     }
 
-    function setParent(\Application\Model\Entity\Post $parent)
+    function setParent(\Post\Model\Entity\Post $parent)
     {
         $this->parent = $parent;
     }
