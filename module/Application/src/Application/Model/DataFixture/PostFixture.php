@@ -23,8 +23,7 @@ class PostFixture implements FixtureInterface
             'title' => 'Teste asdasd',
             'content' => 'sdfsffdsfsdsdfsdfdsfd',
             'status' => 'inactive',
-            'slug' => 'asdsaas',
-            ''
+            'slug' => 'asdsaas'
         ]));
         $manager->flush();
     }

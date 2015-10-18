@@ -102,11 +102,11 @@ return array(
             'orm_default' => array(
                 'drivers' => array(
                     __NAMESPACE__.'\Model\Entity' => __NAMESPACE__.'_driver'
-                )
-            )
+                ),
+            ),
         ),
         'data-fixture' => array(
             __NAMESPACE__.'_fixture' => __DIR__.'/../src/'.__NAMESPACE__.'/Model/DataFixture',
-        )
+        ),
     ),
 );

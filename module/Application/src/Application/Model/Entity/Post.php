@@ -71,7 +71,7 @@ class Post
 
     /**
      * @ORM\ManyToOne(targetEntity="Application\Model\Entity\Post", inversedBy="children")
-     * @ORM\JoinColumn(name="parent_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="parent", referencedColumnName="id_post")
      */
     private $parent;
 
