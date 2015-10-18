@@ -10,7 +10,9 @@ return array(
     'modules' => array(
         'Application',
         'DoctrineModule',
-        'DoctrineORMModule'
+        'DoctrineORMModule',
+        'DoctrineDataFixtureModule',
+        'ZendDeveloperTools'
     ),
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => array(
