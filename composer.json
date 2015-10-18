@@ -15,6 +15,7 @@
         "doctrine/doctrine-orm-module": "^0.9.2",
         "hounddog/doctrine-data-fixture-module": "^0.0.4",
         "zendframework/zftool": "dev-master",
-        "zendframework/zend-developer-tools": "dev-master"
+        "zendframework/zend-developer-tools": "dev-master",
+        "phpunit/phpunit": "*"
     }
 }
