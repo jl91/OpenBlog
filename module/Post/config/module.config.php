@@ -45,7 +45,7 @@ return array(
     ),
     'view_manager' => array(
         'template_map' => array(
-            'post/post/index' => __DIR__.'/../view/post/post/index.phtml',
+            'post/post/index' => __DIR__.'/../view/post/post/index.twig',
         ),
         'template_path_stack' => array(
             __DIR__.'/../view',

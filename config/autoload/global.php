@@ -26,4 +26,9 @@ return array(
             ),
         ),
     ),
+    'zfctwig' => [
+        'environment_options' => [
+            'cache' => __DIR__.'/../../data/cache/templates',
+        ],
+    ]
 );

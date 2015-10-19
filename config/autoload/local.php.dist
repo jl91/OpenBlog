@@ -21,5 +21,11 @@ return array(
                 )
             )
         )
-    )
+    ),
+
+'zfctwig' => [
+    'environment_options' => [
+       'debug' => true,
+    ]
+]
 );

@@ -5,7 +5,6 @@
  *
  * @see https://github.com/zendframework/ZFTool
  */
-
 return array(
     'modules' => array(
         'Application',
@@ -14,6 +13,7 @@ return array(
         'DoctrineDataFixtureModule',
         'ZendDeveloperTools',
         'Post',
+        'ZfcTwig'
     ),
     'module_listener_options' => array(
         'module_paths' => array(

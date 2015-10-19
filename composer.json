@@ -16,6 +16,7 @@
         "hounddog/doctrine-data-fixture-module": "^0.0.4",
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "zf-commons/zfc-twig": "^1.2"
     }
 }
