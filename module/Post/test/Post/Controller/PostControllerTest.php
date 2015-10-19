@@ -28,7 +28,7 @@ class PostControllerTest extends AbstractHttpControllerTestCase
 
     public function testIndexActionCanBeAccessed()
     {
-        $this->dispatch('/post/index');
+        $this->dispatch('/post/');
         $this->assertResponseStatusCode(200);
 
         $this->assertModuleName('Post');

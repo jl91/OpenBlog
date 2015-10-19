@@ -11,6 +11,10 @@ and open the template in the editor.
         <testsuite name="post">
             <directory>./Post/Controller</directory>
             <directory>./Post/Model</directory>
+            <directory>./Post/Model/Entity</directory>
+            <directory>./Post/Model/Service</directory>
+            <directory>./Post/Model/Repository</directory>
+            <directory>./Post/Model/Form</directory>
         </testsuite>
     </testsuites>
 </phpunit>

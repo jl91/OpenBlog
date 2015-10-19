@@ -10,7 +10,7 @@ class PostController extends CrudController
 
     public function indexAction()
     {
-        
+        $em = $this->getEm();
         return new ViewModel();
     }
 }

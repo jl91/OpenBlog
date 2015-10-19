@@ -12,7 +12,7 @@ namespace Application\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-abstract class CrudController extends AbstractActionController
+class CrudController extends AbstractActionController
 {
     protected $route;
     protected $action;
