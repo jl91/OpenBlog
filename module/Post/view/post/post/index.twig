@@ -1,5 +1,43 @@
-<p>Mostrando um array de números com o Twig</p>
-{% set num = [1,2,3,4] %}
-{% for n in num %}
-    {{ n }} <br/>
-{% endfor %}
+<div class='table-wrap'>
+    <table class='table table-bordered table-condensed table-striped table-hover'>
+        <thead>
+            <tr>
+                <th>
+                    idPost
+                </th>
+                <th>
+                    createdAt
+                </th>
+                <th>
+                    updatedAt
+                </th>
+                <th>
+                    title
+                </th>
+                <th>
+                    Content
+                </th>
+                <th>
+                    status
+                </th>
+                <th>
+                    slug
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for post in collection %}
+                <tr>
+                    <td>{{post.getIdPost()}}</td>
+                    <td>{{dateFormat(post.getCreatedAt(), constant('IntlDateFormatter::MEDIUM'), constant('IntlDateFormatter::MEDIUM'), 'pt_BR')}}</td>
+                    <td>{{dateFormat(post.getUpdatedAt(), constant('IntlDateFormatter::MEDIUM'), constant('IntlDateFormatter::MEDIUM'), 'pt_BR')}}</td>
+                    <td>{{post.getTitle()}}</td>
+                    <td>{{post.getContent()}}</td>
+                    <td>{{post.getStatus()}}</td>
+                    <td>{{post.getSlug()}}</td>
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

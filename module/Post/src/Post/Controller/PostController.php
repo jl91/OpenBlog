@@ -10,7 +10,10 @@ class PostController extends CrudController
 
     public function indexAction()
     {
-        $em = $this->getEm();
-        return new ViewModel();
+        $em         = $this->getEm();
+        $collection = $em->getRepository('Post\Model\Entity\Post')->findAll();
+        return new ViewModel([
+            'collection' => $collection
+        ]);
     }
 }

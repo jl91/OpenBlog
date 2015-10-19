@@ -26,6 +26,9 @@ class CrudController extends AbstractActionController
     protected $form;
     public $em;
 
+    /**
+     * @return \Doctrine\ORM\EntityManager
+     */
     public function getEm()
     {
 

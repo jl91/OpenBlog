@@ -11,6 +11,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  *
  * @ORM\Entity
  * @ORM\Table(name="post", indexes={@ORM\Index(name="fk_post_post_idx", columns={"parent"})})
+ * @ORM\Entity(repositoryClass="Post\Model\Repository\Post")
  */
 class Post
 {
