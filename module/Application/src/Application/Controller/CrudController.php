@@ -11,6 +11,7 @@ namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Doctrine\ORM\EntityManager;
 
 class CrudController extends AbstractActionController
 {
@@ -23,10 +24,15 @@ class CrudController extends AbstractActionController
     protected $layout;
     protected $view;
     protected $form;
+    public $em;
 
     public function getEm()
     {
-        return $this->getServiceLocator()->get('Doctrine\ORM\EntityManager');
+
+        if (!$this->em instanceof EntityManager) {
+            return $this->getServiceLocator()->get('Doctrine\ORM\EntityManager');
+        }
+        return $this->em;
     }
 
     function getOffset()

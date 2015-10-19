@@ -36,7 +36,9 @@ class CrudControlerTest extends AbstractHttpControllerTestCase
         $this->setApplicationConfig(
             include __DIR__.'/../../../../../config/application.config.php'
         );
+
         parent::setUp();
+
         $serviceManager   = Bootstrap::getServiceManager();
         $this->controller = new CrudController();
         $this->request    = new Request();
@@ -51,6 +53,9 @@ class CrudControlerTest extends AbstractHttpControllerTestCase
         $this->controller->setEvent($this->event);
 
         $this->controller->setServiceLocator($serviceManager);
+        $this->controller->em = $this->getMock('Doctrine\ORM\EntityManager',
+            array('getRepository', 'getClassMetadata', 'persist', 'flush', 'find'),
+            array(), '', false);
     }
 
     public function testControllerShouldHaveAndDoctrineORMEntityManagerInGetEmMethod()
