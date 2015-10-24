@@ -1,4 +1,5 @@
 /vendor
 /nbproject
 /public/vendor
+/public/templates
 /config/autoload/local.php

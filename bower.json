@@ -1,0 +1,43 @@
+{
+  "name": "OpenBlog",
+  "description": "A decent and OpenSource blog tool",
+  "main": [
+    "public/vendor/angular#1.4.3",
+    "sass/motion.scss"
+  ],
+  "dependencies": {
+    "admin-lte": "~2.3.2"
+  },
+  "moduleType": [
+    "amd",
+    "es6"
+  ],
+  "keywords": [
+    "Blog",
+    "CMS",
+    "opensource",
+    "angular",
+    "admin",
+    "lte",
+    "admin",
+    "lte",
+    "bootstrap",
+    "javascript",
+    "zf2",
+    "doctrine",
+    "doctrine 2"
+  ],
+  "authors": [
+    "John lennon de melo fernandes <jlfernandes91@hotmail.com>"
+  ],
+  "license": "gpl",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.0.0",
+  "homepage": "https://github.com/jl91/OpenBlog"
+}
