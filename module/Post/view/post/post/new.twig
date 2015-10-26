@@ -1,0 +1,12 @@
+{% set currentForm = myForm.prepare()%}
+
+<div class="container">
+    {{ form().openTag(currentForm) | raw }}
+    {% for element in currentForm %}
+        <div class="row">
+            <label>{{element.getLabel()}}</label>
+                {{formRow(element) | raw}}
+        </div>
+    {% endfor %}
+    {{ form().closeTag() | raw }}
+</div>

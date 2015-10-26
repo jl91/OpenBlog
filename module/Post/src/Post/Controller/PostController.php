@@ -16,4 +16,15 @@ class PostController extends CrudController
             'collection' => $collection
         ]);
     }
+
+    public function newAction()
+    {
+        $form = new \Post\Form\Post();
+
+        return new ViewModel([
+            'title' => 'Adicionar',
+            'subTitle' => 'novo post',
+            'myForm' => $form
+        ]);
+    }
 }
